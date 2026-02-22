@@ -6,9 +6,9 @@ function db(): PDO {
   if ($pdo) return $pdo;
 
   $db_host = 'localhost';                 // usually localhost on cPanel
-  $db_name = 'kudkrzte_khareefv3';
-  $db_user = 'kudkrzte_khareefv3';
-  $db_pass = 'ba3!,wgx8,oL';
+  $db_name = '';
+  $db_user = '';
+  $db_pass = '';
 
   $dsn = "mysql:host={$db_host};dbname={$db_name};charset=utf8mb4";
 
@@ -18,4 +18,5 @@ function db(): PDO {
   ]);
 
   return $pdo;
+
 }
