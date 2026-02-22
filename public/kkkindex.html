@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Travel Guide Map</title>
+<style>
+  :root{
+    --bg:#f2f4f7;
+    --panel:#fff;
+    --text:#0b1320;
+    --muted:#5b6573;
+    --line:#e6ebf0;
+    --shadow:0 6px 22px rgba(16,24,40,.08);
+    --shadow2:0 2px 10px rgba(16,24,40,.06);
+    --r:14px;
+
+    /* Booking blues */
+    --b:#003580;
+    --b2:#0057d9;
+    --chip:#eef3ff;
+    --pin:#0A4AA6;
+  }
+
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0;
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    background:var(--bg);
+    color:var(--text);
+  }
+
+  /* 3-column layout */
+  .booking-ui{
+    display:grid;
+    grid-template-columns: 280px 420px 1fr;
+    height:100vh;
+  }
+
+  /* Left filter column */
+  .filters{
+    border-right:1px solid var(--line);
+    overflow:auto;
+    padding:14px;
+  }
+  .filtersBox{
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:16px;
+    box-shadow:var(--shadow2);
+    padding:14px;
+  }
+  .filtersBox h3{margin:0 0 12px;font-size:16px}
+  .filterGroup{padding:12px 0;border-top:1px solid var(--line)}
+  .filterGroup:first-of-type{border-top:none;padding-top:0}
+  .filterTitle{font-weight:800;font-size:13px;margin-bottom:10px;color:#2a3442}
+  .check{display:flex;align-items:center;gap:10px;margin:10px 0;font-size:13px;color:#2a3442}
+  .check input{transform:scale(1.05)}
+  .count{margin-left:auto;color:var(--muted);font-size:12px}
+
+  /* Middle list column */
+  .side{
+    background:var(--bg);
+    border-right:1px solid var(--line);
+    overflow:auto;
+  }
+
+  .top{
+    position:sticky;
+    top:0;
+    z-index:5;
+    background:#fff;
+    border-bottom:1px solid var(--line);
+    padding:12px 12px 10px;
+  }
+
+  .topRow{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+    margin-bottom:10px;
+  }
+
+  .sortPill{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:10px 12px;
+    border:1px solid var(--line);
+    border-radius:999px;
+    background:#fff;
+    font-size:13px;
+    box-shadow:var(--shadow2);
+  }
+  .sortPill .chev{opacity:.7}
+
+  .searchWrap{position:relative}
+  .search{
+    width:100%;
+    padding:12px 14px 12px 42px;
+    border:1px solid var(--line);
+    border-radius:14px;
+    background:#fff;
+    outline:none;
+    font-size:14px;
+    box-shadow:var(--shadow2);
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' stroke='%23626d7a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='9' cy='9' r='7'/%3E%3Cpath d='M16 16l-3.5-3.5'/%3E%3C/svg%3E");
+    background-repeat:no-repeat;
+    background-position:14px 50%;
+  }
+  .search:focus{
+    border-color:rgba(0,87,217,.55);
+    box-shadow:0 0 0 4px rgba(0,87,217,.12), var(--shadow2);
+  }
+
+  .list{padding:12px}
+
+  /* Booking-like cards */
+  .card{
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:16px;
+    box-shadow:var(--shadow2);
+    margin-bottom:12px;
+    padding:10px;
+    display:grid;
+    grid-template-columns: 112px 1fr;
+    gap:12px;
+    cursor:pointer;
+    transition:transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+  }
+  .card:hover{transform:translateY(-1px);box-shadow:var(--shadow);border-color:rgba(0,87,217,.22)}
+  .card.active{border-color:rgba(0,87,217,.55);box-shadow:0 0 0 4px rgba(0,87,217,.12), var(--shadow)}
+
+  .thumb{
+    width:112px;height:112px;border-radius:14px;object-fit:cover;background:#e9eef5;border:1px solid rgba(0,0,0,.05)
+  }
+
+  .cardMain{min-width:0}
+  .titleRow{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+  .card h3{margin:0;font-size:15px;line-height:1.25;color:var(--b2);font-weight:800}
+  .heart{font-size:18px;color:#111;opacity:.45}
+  .meta{color:var(--muted);font-size:12px;margin:6px 0 8px}
+  .tag{
+    display:inline-flex;align-items:center;gap:6px;
+    padding:6px 10px;border-radius:999px;
+    background:var(--chip);color:var(--b);font-size:12px;font-weight:800;
+  }
+  .desc{
+    color:#3b4554;font-size:13px;line-height:1.35;margin:8px 0 0;
+    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+  }
+
+  /* Map column */
+  .map{position:relative;background:#fff}
+  #map{width:100%;height:100%}
+
+  .mapTopSearch{
+    position:absolute;left:12px;top:12px;
+    z-index:10;
+    display:flex;align-items:center;gap:8px;
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:14px;
+    box-shadow:var(--shadow);
+    padding:10px 12px;
+    width:min(420px, calc(100% - 24px));
+  }
+  .mapTopSearch input{
+    border:none;outline:none;width:100%;
+    font-size:14px;
+  }
+  .mapSearchIcon{opacity:.7}
+
+  /* Mobile */
+  @media(max-width:1050px){
+    .booking-ui{grid-template-columns: 1fr}
+    .filters{display:none}
+    .side{height:auto;border-right:none}
+    .map{height:420px}
+    #map{height:420px}
+  }
+</style>
+ 
+  
+</head>
+<body>
+
+<div class="wrap booking-ui">
+  <!-- Left filters column -->
+  <aside class="filters">
+    <div class="filtersBox">
+      <h3>Filter by</h3>
+
+      <div class="filterGroup">
+        <div class="filterTitle">Popular filters</div>
+        <label class="check"><input type="checkbox" checked disabled> Locations <span class="count">Always</span></label>
+        <label class="check"><input id="fHotel" type="checkbox"> Hotels</label>
+        <label class="check"><input id="fPetrol" type="checkbox"> Petrol stations</label>
+        <label class="check"><input id="fFood" type="checkbox"> Restaurants</label>
+      </div>
+
+      <div class="filterGroup">
+        <div class="filterTitle">Property type</div>
+        <label class="check"><input type="checkbox"> Attractions</label>
+        <label class="check"><input type="checkbox"> Viewpoints</label>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Middle list column -->
+  <aside class="side">
+    <div class="top">
+      <div class="topRow">
+        <div class="sortPill">
+          Sort by: <strong>Top picks</strong>
+          <span class="chev">▾</span>
+        </div>
+      </div>
+
+      <div class="searchWrap">
+        <input id="search" class="search" placeholder="Search…" />
+      </div>
+    </div>
+
+    <div id="list" class="list">Loading…</div>
+  </aside>
+
+  <!-- Right map column -->
+  <main class="map">
+    <div class="mapTopSearch">
+      <span class="mapSearchIcon">🔍</span>
+      <input id="mapSearch" placeholder="Search on map" />
+    </div>
+    <div id="map"></div>
+  </main>
+</div>
+
+<script>
+/** ✅ EDIT YOUR MARKERS HERE **/
+const LOCATIONS = [
+  {
+    id: 1,
+    title: "Salalah Viewpoint",
+    type: "Location",
+    address: "Salalah, Oman",
+    shortText: "Beautiful viewpoint for sunsets and mountains.",
+    lat: 17.0190,
+    lng: 54.0897,
+    imageUrl: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/483748708.jpg?k=13a54290394d66355d12498b0b2b3a4f3ef3d3b17e7baa8c1e9d20710cd6aaf1&o=" // optional
+  },
+  {
+    id: 2,
+    title: "Hotel Example",
+    type: "Hotel",
+    address: "Near city center",
+    shortText: "Good hotel with nice service.",
+    lat: 17.0180,
+    lng: 54.0920,
+    imageUrl: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/490859309.jpg?k=c9f892497ed6b2d18043ab626ee39881433834a4ba1a8c1dd45308738c7b158a&o="
+  }
+];
+
+/** Default map center **/
+const DEFAULT_CENTER = { lat: 17.0190, lng: 54.0897 };
+const DEFAULT_ZOOM = 12;
+
+function esc(str){
+  return String(str||'').replace(/[&<>"']/g, s => ({
+    '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
+  }[s]));
+}
+
+let map, info;
+const markers = new Map();
+
+function setActive(id){
+  document.querySelectorAll('.card').forEach(c => c.classList.toggle('active', Number(c.dataset.id) === Number(id)));
+}
+
+function renderList(){
+  const listEl = document.getElementById('list');
+  const q = (document.getElementById('search').value || '').trim().toLowerCase();
+
+  const filtered = LOCATIONS.filter(l => {
+    return (l.title||'').toLowerCase().includes(q) ||
+           (l.address||'').toLowerCase().includes(q) ||
+           (l.shortText||'').toLowerCase().includes(q) ||
+           (l.type||'').toLowerCase().includes(q);
+  });
+
+  listEl.innerHTML = '';
+  if(!filtered.length){
+    listEl.innerHTML = '<div style="color:#666;padding:10px">No results</div>';
+    markers.forEach((m) => m.setVisible(false));
+    return;
+  }
+
+  // show/hide markers based on filter
+  const visibleIds = new Set(filtered.map(x => x.id));
+  markers.forEach((m, id) => m.setVisible(visibleIds.has(id)));
+
+  filtered.forEach(l => {
+    const div = document.createElement('div');
+    div.className = 'card';
+    div.dataset.id = l.id;
+
+    const img = l.imageUrl ? `<img class="thumb" src="${esc(l.imageUrl)}" alt="">` : `<div class="thumb"></div>`;
+
+            div.innerHTML = `
+              <img class="thumb" src="${l.imageUrl ? esc(l.imageUrl) : ''}" onerror="this.style.display='none'">
+              <div class="cardMain">
+                <div class="titleRow">
+                  <h3>${esc(l.title)}</h3>
+                  <div class="heart">♡</div>
+                </div>
+            
+                <div class="meta">
+                  <span class="tag">${esc(l.type || "Place")}</span>
+                  ${l.address ? `<span> • ${esc(l.address)}</span>` : ``}
+                </div>
+            
+                <p class="desc">${esc(l.shortText || "")}</p>
+              </div>
+            `;
+
+    div.addEventListener('click', () => {
+      const m = markers.get(l.id);
+      if(!m) return;
+      setActive(l.id);
+      map.panTo(m.getPosition());
+      map.setZoom(Math.max(map.getZoom(), 13));
+      google.maps.event.trigger(m, 'click');
+    });
+
+    listEl.appendChild(div);
+  });
+}
+
+window.initMap = function initMap(){
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: LOCATIONS.length ? {lat: LOCATIONS[0].lat, lng: LOCATIONS[0].lng} : DEFAULT_CENTER,
+    zoom: LOCATIONS.length ? DEFAULT_ZOOM : 2,
+    mapTypeControl: false,
+    streetViewControl: false,
+    fullscreenControl: true
+  });
+
+  info = new google.maps.InfoWindow();
+
+  LOCATIONS.forEach(l => {
+               const m = new google.maps.Marker({
+              position: {lat: l.lat, lng: l.lng},
+              map,
+              title: l.title,
+              icon: {
+                url: bookingPinSvg(),
+                scaledSize: new google.maps.Size(36, 36),
+                anchor: new google.maps.Point(18, 34)
+              }
+            });
+
+    m.addListener('click', () => {
+      setActive(l.id);
+      const dest = encodeURIComponent(`${l.lat},${l.lng}`);
+
+  info.setContent(`
+  <div style="
+    width:320px;
+    font-family: ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+    color:#0b1320;
+  ">
+    <div style="
+      background:#fff;
+      border:1px solid #e6ebf0;
+      border-radius:16px;
+      box-shadow:0 10px 26px rgba(16,24,40,.12);
+      overflow:hidden;
+    ">
+      <div style="padding:12px 12px 10px;">
+        <div style="font-weight:800;font-size:15px;line-height:1.2;margin-bottom:6px;">
+          ${esc(l.title)}
+        </div>
+
+        <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+          <span style="
+            display:inline-flex;align-items:center;gap:6px;
+            padding:6px 10px;border-radius:999px;
+            background:#eef3ff;color:#003580;font-size:12px;font-weight:700;
+          ">
+            ${esc(l.type || "Place")}
+          </span>
+
+          <span style="color:#5b6573;font-size:12px;">
+            ${esc(l.address || "")}
+          </span>
+        </div>
+
+        <div style="margin-top:10px;color:#3b4554;font-size:13px;line-height:1.35;">
+          ${esc(l.shortText || "")}
+        </div>
+      </div>
+
+      <div style="padding:12px;border-top:1px solid #e6ebf0;background:#fbfcfe;">
+        <div style="font-size:12px;color:#5b6573;margin-bottom:8px;font-weight:600;">
+          Get directions
+        </div>
+
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <a target="_blank"
+            href="https://www.google.com/maps/dir/?api=1&destination=${dest}&travelmode=driving"
+            style="
+              text-decoration:none;
+              padding:10px 12px;border-radius:12px;
+              background:#003580;color:#fff;font-size:12px;font-weight:800;
+              display:inline-flex;align-items:center;gap:8px;
+              box-shadow:0 6px 14px rgba(0,53,128,.20);
+            ">
+            🚗 Driving
+          </a>
+
+          <a target="_blank"
+            href="https://www.google.com/maps/dir/?api=1&destination=${dest}&travelmode=walking"
+            style="
+              text-decoration:none;
+              padding:10px 12px;border-radius:12px;
+              background:#fff;color:#0b1320;font-size:12px;font-weight:800;
+              border:1px solid #e6ebf0;
+              display:inline-flex;align-items:center;gap:8px;
+            ">
+            🚶 Walking
+          </a>
+
+          <a target="_blank"
+            href="https://www.google.com/maps/dir/?api=1&destination=${dest}&travelmode=transit"
+            style="
+              text-decoration:none;
+              padding:10px 12px;border-radius:12px;
+              background:#fff;color:#0b1320;font-size:12px;font-weight:800;
+              border:1px solid #e6ebf0;
+              display:inline-flex;align-items:center;gap:8px;
+            ">
+            🚌 Transit
+          </a>
+        </div>
+
+        <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;">
+          <a target="_blank"
+             href="https://www.google.com/maps/search/?api=1&query=${dest}"
+             style="color:#0057d9;text-decoration:none;font-size:12px;font-weight:700;">
+            Open in Google Maps →
+          </a>
+
+          <span style="font-size:11px;color:#7a8596;">
+            Destination: ${l.lat.toFixed ? l.lat.toFixed(4) : l.lat}, ${l.lng.toFixed ? l.lng.toFixed(4) : l.lng}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+`);
+
+      info.open({anchor:m, map});
+    });
+
+    markers.set(l.id, m);
+  });
+
+  document.getElementById('search').addEventListener('input', renderList);
+  renderList();
+};
+
+
+function bookingPinSvg(){
+  const svg = `
+  <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
+    <path d="M22 2C14 2 7.5 8.5 7.5 16.5c0 10.5 14.5 25.5 14.5 25.5S36.5 27 36.5 16.5C36.5 8.5 30 2 22 2z" fill="#0A4AA6"/>
+    <circle cx="22" cy="16.5" r="7.5" fill="#ffffff"/>
+    <circle cx="22" cy="16.5" r="4.2" fill="#0A4AA6"/>
+  </svg>`;
+  return "data:image/svg+xml;charset=UTF-8," + encodeURIComponent(svg.trim());
+}
+
+
+document.getElementById('mapSearch').addEventListener('input', (e) => {
+  document.getElementById('search').value = e.target.value;
+  renderList();
+});
+
+</script>
+
+<!-- ✅ Put your API key here -->
+<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUsFBgR4C5EY74IM9BkEDaPT2QDl1poX0&callback=initMap">
+</script>
+
+
+</body>
+</html>

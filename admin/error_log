@@ -1,0 +1,392 @@
+[13-Feb-2026 02:34:43 America/Chicago] PHP Parse error:  syntax error, unexpected identifier "Upload", expecting ")" in /home1/kudkrzte/public_html/website_2456c832/app/helpers.php on line 71
+[13-Feb-2026 02:35:13 America/Chicago] PHP Parse error:  syntax error, unexpected identifier "Upload", expecting ")" in /home1/kudkrzte/public_html/website_2456c832/app/helpers.php on line 71
+[13-Feb-2026 02:35:19 America/Chicago] PHP Parse error:  syntax error, unexpected identifier "Upload", expecting ")" in /home1/kudkrzte/public_html/website_2456c832/app/helpers.php on line 71
+[13-Feb-2026 02:35:53 America/Chicago] PHP Parse error:  syntax error, unexpected identifier "Upload", expecting ")" in /home1/kudkrzte/public_html/website_2456c832/app/helpers.php on line 71
+[13-Feb-2026 02:36:40 America/Chicago] PHP Parse error:  syntax error, unexpected identifier "Upload", expecting ")" in /home1/kudkrzte/public_html/website_2456c832/app/helpers.php on line 71
+[13-Feb-2026 02:37:24 America/Chicago] PHP Parse error:  syntax error, unexpected identifier "Upload", expecting ")" in /home1/kudkrzte/public_html/website_2456c832/app/helpers.php on line 71
+[21-Feb-2026 11:20:39 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 9
+[21-Feb-2026 11:20:39 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 10
+[21-Feb-2026 11:20:39 America/Chicago] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 13
+[21-Feb-2026 11:20:39 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kudkrzte/public_html/website_2456c832/public/config.php:1) in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 48
+[21-Feb-2026 11:34:02 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 9
+[21-Feb-2026 11:34:02 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 10
+[21-Feb-2026 11:34:02 America/Chicago] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 13
+[21-Feb-2026 11:34:02 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kudkrzte/public_html/website_2456c832/public/config.php:1) in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 48
+[21-Feb-2026 11:35:11 America/Chicago] PHP Warning:  require_once(/home1/kudkrzte/public_html/website_2456c832/admin/db.php): Failed to open stream: No such file or directory in /home1/kudkrzte/public_html/website_2456c832/admin/make_admin.php on line 2
+[21-Feb-2026 11:35:11 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/kudkrzte/public_html/website_2456c832/admin/db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home1/kudkrzte/public_html/website_2456c832/admin/make_admin.php:2
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/make_admin.php on line 2
+[21-Feb-2026 11:37:54 America/Chicago] PHP Warning:  require_once(/home1/kudkrzte/public_html/website_2456c832/admin/db.php): Failed to open stream: No such file or directory in /home1/kudkrzte/public_html/website_2456c832/admin/make_admin.php on line 4
+[21-Feb-2026 11:37:54 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/kudkrzte/public_html/website_2456c832/admin/db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home1/kudkrzte/public_html/website_2456c832/admin/make_admin.php:4
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/make_admin.php on line 4
+[21-Feb-2026 11:38:50 America/Chicago] PHP Warning:  require_once(/home1/kudkrzte/public_html/website_2456c832/admin./public/db.php): Failed to open stream: No such file or directory in /home1/kudkrzte/public_html/website_2456c832/admin/make_admin.php on line 4
+[21-Feb-2026 11:38:50 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/kudkrzte/public_html/website_2456c832/admin./public/db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home1/kudkrzte/public_html/website_2456c832/admin/make_admin.php:4
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/make_admin.php on line 4
+[21-Feb-2026 11:38:52 America/Chicago] PHP Warning:  require_once(/home1/kudkrzte/public_html/website_2456c832/admin./public/db.php): Failed to open stream: No such file or directory in /home1/kudkrzte/public_html/website_2456c832/admin/make_admin.php on line 4
+[21-Feb-2026 11:38:52 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/kudkrzte/public_html/website_2456c832/admin./public/db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home1/kudkrzte/public_html/website_2456c832/admin/make_admin.php:4
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/make_admin.php on line 4
+[21-Feb-2026 11:39:59 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 9
+[21-Feb-2026 11:39:59 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 10
+[21-Feb-2026 11:39:59 America/Chicago] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 13
+[21-Feb-2026 11:39:59 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kudkrzte/public_html/website_2456c832/public/config.php:1) in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 48
+[21-Feb-2026 11:40:33 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 9
+[21-Feb-2026 11:40:33 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 10
+[21-Feb-2026 11:40:33 America/Chicago] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 13
+[21-Feb-2026 11:40:34 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kudkrzte/public_html/website_2456c832/public/config.php:1) in /home1/kudkrzte/public_html/website_2456c832/admin/login.php on line 10
+[21-Feb-2026 11:41:08 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 9
+[21-Feb-2026 11:41:08 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 10
+[21-Feb-2026 11:41:08 America/Chicago] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 13
+[21-Feb-2026 11:41:08 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kudkrzte/public_html/website_2456c832/public/config.php:1) in /home1/kudkrzte/public_html/website_2456c832/admin/login.php on line 11
+[21-Feb-2026 11:42:28 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 9
+[21-Feb-2026 11:42:28 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 10
+[21-Feb-2026 11:42:28 America/Chicago] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 13
+[21-Feb-2026 11:42:28 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kudkrzte/public_html/website_2456c832/public/config.php:1) in /home1/kudkrzte/public_html/website_2456c832/admin/login.php on line 13
+[21-Feb-2026 11:42:31 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 9
+[21-Feb-2026 11:42:31 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 10
+[21-Feb-2026 11:42:31 America/Chicago] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 13
+[21-Feb-2026 11:42:31 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kudkrzte/public_html/website_2456c832/public/config.php:1) in /home1/kudkrzte/public_html/website_2456c832/admin/login.php on line 13
+[21-Feb-2026 11:42:46 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 9
+[21-Feb-2026 11:42:46 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 10
+[21-Feb-2026 11:42:46 America/Chicago] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 13
+[21-Feb-2026 11:42:46 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kudkrzte/public_html/website_2456c832/public/config.php:1) in /home1/kudkrzte/public_html/website_2456c832/admin/login.php on line 13
+[21-Feb-2026 11:43:14 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function admin_login() in /home1/kudkrzte/public_html/website_2456c832/admin/login.php:12
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/login.php on line 12
+[21-Feb-2026 11:43:26 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function admin_login() in /home1/kudkrzte/public_html/website_2456c832/admin/login.php:12
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/login.php on line 12
+[21-Feb-2026 11:43:28 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function admin_login() in /home1/kudkrzte/public_html/website_2456c832/admin/login.php:12
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/login.php on line 12
+[21-Feb-2026 11:43:43 America/Chicago] PHP Warning:  Undefined variable $err in /home1/kudkrzte/public_html/website_2456c832/admin/login.php on line 34
+[21-Feb-2026 11:43:48 America/Chicago] PHP Warning:  Undefined variable $err in /home1/kudkrzte/public_html/website_2456c832/admin/login.php on line 34
+[21-Feb-2026 11:43:52 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 9
+[21-Feb-2026 11:43:52 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 10
+[21-Feb-2026 11:43:52 America/Chicago] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 13
+[21-Feb-2026 11:43:52 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kudkrzte/public_html/website_2456c832/public/config.php:1) in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 48
+[21-Feb-2026 11:44:19 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 9
+[21-Feb-2026 11:44:19 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 10
+[21-Feb-2026 11:44:19 America/Chicago] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 13
+[21-Feb-2026 11:44:19 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kudkrzte/public_html/website_2456c832/public/config.php:1) in /home1/kudkrzte/public_html/website_2456c832/admin/login.php on line 13
+[21-Feb-2026 11:44:22 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 9
+[21-Feb-2026 11:44:22 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 10
+[21-Feb-2026 11:44:22 America/Chicago] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 13
+[21-Feb-2026 11:44:22 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kudkrzte/public_html/website_2456c832/public/config.php:1) in /home1/kudkrzte/public_html/website_2456c832/admin/login.php on line 13
+[21-Feb-2026 11:45:24 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 9
+[21-Feb-2026 11:45:24 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 10
+[21-Feb-2026 11:45:24 America/Chicago] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 13
+[21-Feb-2026 11:45:24 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kudkrzte/public_html/website_2456c832/public/config.php:1) in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 48
+[21-Feb-2026 11:45:33 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 9
+[21-Feb-2026 11:45:33 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 10
+[21-Feb-2026 11:45:33 America/Chicago] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 13
+[21-Feb-2026 11:45:33 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kudkrzte/public_html/website_2456c832/public/config.php:1) in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 48
+[21-Feb-2026 11:45:35 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 9
+[21-Feb-2026 11:45:35 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 10
+[21-Feb-2026 11:45:35 America/Chicago] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 13
+[21-Feb-2026 11:45:35 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kudkrzte/public_html/website_2456c832/public/config.php:1) in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 48
+[21-Feb-2026 11:46:35 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 9
+[21-Feb-2026 11:46:35 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 10
+[21-Feb-2026 11:46:35 America/Chicago] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 13
+[21-Feb-2026 11:46:35 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kudkrzte/public_html/website_2456c832/public/config.php:1) in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 48
+[21-Feb-2026 11:46:58 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 9
+[21-Feb-2026 11:46:58 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 10
+[21-Feb-2026 11:46:58 America/Chicago] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 13
+[21-Feb-2026 11:46:58 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kudkrzte/public_html/website_2456c832/public/config.php:1) in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 48
+[21-Feb-2026 11:47:01 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 9
+[21-Feb-2026 11:47:01 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 10
+[21-Feb-2026 11:47:01 America/Chicago] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 13
+[21-Feb-2026 11:47:01 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kudkrzte/public_html/website_2456c832/public/config.php:1) in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 48
+[21-Feb-2026 11:47:17 America/Chicago] PHP Warning:  Undefined variable $me in /home1/kudkrzte/public_html/website_2456c832/admin/index.php on line 21
+[21-Feb-2026 11:47:17 America/Chicago] PHP Warning:  Trying to access array offset on value of type null in /home1/kudkrzte/public_html/website_2456c832/admin/index.php on line 21
+[21-Feb-2026 11:47:17 America/Chicago] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home1/kudkrzte/public_html/website_2456c832/admin/index.php on line 21
+[21-Feb-2026 11:47:42 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function require_admin() in /home1/kudkrzte/public_html/website_2456c832/admin/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/index.php on line 6
+[21-Feb-2026 11:47:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function require_admin() in /home1/kudkrzte/public_html/website_2456c832/admin/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/index.php on line 6
+[21-Feb-2026 11:48:05 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function require_admin() in /home1/kudkrzte/public_html/website_2456c832/admin/index.php:7
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/index.php on line 7
+[21-Feb-2026 11:50:40 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 9
+[21-Feb-2026 11:50:40 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 10
+[21-Feb-2026 11:50:40 America/Chicago] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 13
+[21-Feb-2026 11:50:40 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kudkrzte/public_html/website_2456c832/public/config.php:1) in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 48
+[21-Feb-2026 11:52:00 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 9
+[21-Feb-2026 11:52:00 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 10
+[21-Feb-2026 11:52:00 America/Chicago] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 13
+[21-Feb-2026 11:52:00 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kudkrzte/public_html/website_2456c832/public/config.php:1) in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 48
+[21-Feb-2026 11:53:38 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 9
+[21-Feb-2026 11:53:38 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 10
+[21-Feb-2026 11:53:38 America/Chicago] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 13
+[21-Feb-2026 11:53:38 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kudkrzte/public_html/website_2456c832/public/config.php:1) in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 48
+[21-Feb-2026 11:54:08 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kudkrzte/public_html/website_2456c832/public/config.php:1) in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 48
+[21-Feb-2026 11:57:02 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kudkrzte/public_html/website_2456c832/public/config.php:1) in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 48
+[21-Feb-2026 11:58:36 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kudkrzte/public_html/website_2456c832/public/config.php:1) in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 48
+[21-Feb-2026 11:59:48 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kudkrzte/public_html/website_2456c832/public/config.php:1) in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 48
+[21-Feb-2026 12:00:11 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kudkrzte/public_html/website_2456c832/public/config.php:1) in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 48
+[21-Feb-2026 12:00:24 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kudkrzte/public_html/website_2456c832/public/config.php:1) in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 48
+[21-Feb-2026 12:00:32 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kudkrzte/public_html/website_2456c832/public/config.php:1) in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 48
+[21-Feb-2026 12:01:33 America/Chicago] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home1/kudkrzte/public_html/website_2456c832/public/config.php on line 3
+[21-Feb-2026 12:01:33 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kudkrzte/public_html/website_2456c832/public/config.php:1) in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 48
+[21-Feb-2026 12:03:17 America/Chicago] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home1/kudkrzte/public_html/website_2456c832/public/config.php on line 3
+[21-Feb-2026 12:03:17 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kudkrzte/public_html/website_2456c832/public/config.php:1) in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 48
+[21-Feb-2026 12:03:28 America/Chicago] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home1/kudkrzte/public_html/website_2456c832/public/config.php on line 2
+[21-Feb-2026 12:03:28 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kudkrzte/public_html/website_2456c832/public/config.php:2) in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 48
+[21-Feb-2026 12:03:29 America/Chicago] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home1/kudkrzte/public_html/website_2456c832/public/config.php on line 2
+[21-Feb-2026 12:03:29 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kudkrzte/public_html/website_2456c832/public/config.php:2) in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 48
+[21-Feb-2026 12:06:57 America/Chicago] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home1/kudkrzte/public_html/website_2456c832/public/config.php on line 2
+[21-Feb-2026 12:06:57 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kudkrzte/public_html/website_2456c832/public/config.php:2) in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 48
+[21-Feb-2026 12:08:26 America/Chicago] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home1/kudkrzte/public_html/website_2456c832/public/config.php on line 2
+[21-Feb-2026 12:11:00 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function require_admin() in /home1/kudkrzte/public_html/website_2456c832/admin/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/index.php on line 8
+[21-Feb-2026 12:11:53 America/Chicago] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home1/kudkrzte/public_html/website_2456c832/public/config.php on line 2
+[21-Feb-2026 12:12:12 America/Chicago] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home1/kudkrzte/public_html/website_2456c832/public/config.php on line 2
+[21-Feb-2026 12:14:39 America/Chicago] PHP Warning:  require_once(/home1/kudkrzte/public_html/website_2456c832/admin/db.php): Failed to open stream: No such file or directory in /home1/kudkrzte/public_html/website_2456c832/admin/markers.php on line 2
+[21-Feb-2026 12:14:39 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/kudkrzte/public_html/website_2456c832/admin/db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home1/kudkrzte/public_html/website_2456c832/admin/markers.php:2
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/markers.php on line 2
+[21-Feb-2026 12:15:38 America/Chicago] PHP Warning:  require_once(/home1/kudkrzte/public_html/website_2456c832/admin/../db.php): Failed to open stream: No such file or directory in /home1/kudkrzte/public_html/website_2456c832/admin/markers.php on line 2
+[21-Feb-2026 12:15:38 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/kudkrzte/public_html/website_2456c832/admin/../db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home1/kudkrzte/public_html/website_2456c832/admin/markers.php:2
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/markers.php on line 2
+[21-Feb-2026 12:16:16 America/Chicago] PHP Warning:  require_once(/home1/kudkrzte/public_html/website_2456c832/admin/auth.php): Failed to open stream: No such file or directory in /home1/kudkrzte/public_html/website_2456c832/admin/markers.php on line 3
+[21-Feb-2026 12:16:16 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/kudkrzte/public_html/website_2456c832/admin/auth.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home1/kudkrzte/public_html/website_2456c832/admin/markers.php:3
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/markers.php on line 3
+[21-Feb-2026 12:16:41 America/Chicago] PHP Warning:  require_once(/home1/kudkrzte/public_html/website_2456c832/admin/auth.php): Failed to open stream: No such file or directory in /home1/kudkrzte/public_html/website_2456c832/admin/markers.php on line 5
+[21-Feb-2026 12:16:41 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/kudkrzte/public_html/website_2456c832/admin/auth.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home1/kudkrzte/public_html/website_2456c832/admin/markers.php:5
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/markers.php on line 5
+[21-Feb-2026 12:16:58 America/Chicago] PHP Warning:  require_once(/home1/kudkrzte/public_html/website_2456c832/admin/../auth.php): Failed to open stream: No such file or directory in /home1/kudkrzte/public_html/website_2456c832/admin/markers.php on line 5
+[21-Feb-2026 12:16:58 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/kudkrzte/public_html/website_2456c832/admin/../auth.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home1/kudkrzte/public_html/website_2456c832/admin/markers.php:5
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/markers.php on line 5
+[21-Feb-2026 12:19:17 America/Chicago] PHP Warning:  require_once(/home1/kudkrzte/public_html/website_2456c832/admin/auth.php): Failed to open stream: No such file or directory in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php on line 4
+[21-Feb-2026 12:19:17 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/kudkrzte/public_html/website_2456c832/admin/auth.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php:4
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php on line 4
+[21-Feb-2026 12:20:00 America/Chicago] PHP Warning:  require_once(/home1/kudkrzte/public_html/website_2456c832/admin/auth.php): Failed to open stream: No such file or directory in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php on line 4
+[21-Feb-2026 12:20:00 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/kudkrzte/public_html/website_2456c832/admin/auth.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php:4
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php on line 4
+[21-Feb-2026 12:28:13 America/Chicago] PHP Warning:  require_once(/home1/kudkrzte/public_html/website_2456c832/admin/config.php): Failed to open stream: No such file or directory in /home1/kudkrzte/public_html/website_2456c832/admin/marker.php on line 2
+[21-Feb-2026 12:28:13 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/kudkrzte/public_html/website_2456c832/admin/config.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home1/kudkrzte/public_html/website_2456c832/admin/marker.php:2
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/marker.php on line 2
+[21-Feb-2026 12:29:13 America/Chicago] PHP Warning:  require_once(/home1/kudkrzte/public_html/website_2456c832/admin/config.php): Failed to open stream: No such file or directory in /home1/kudkrzte/public_html/website_2456c832/admin/marker.php on line 2
+[21-Feb-2026 12:29:13 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/kudkrzte/public_html/website_2456c832/admin/config.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home1/kudkrzte/public_html/website_2456c832/admin/marker.php:2
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/marker.php on line 2
+[21-Feb-2026 12:30:40 America/Chicago] PHP Warning:  include(/home1/kudkrzte/public_html/website_2456c832/admin/header.php): Failed to open stream: No such file or directory in /home1/kudkrzte/public_html/website_2456c832/admin/marker.php on line 333
+[21-Feb-2026 12:30:40 America/Chicago] PHP Warning:  include(): Failed opening '/home1/kudkrzte/public_html/website_2456c832/admin/header.php' for inclusion (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home1/kudkrzte/public_html/website_2456c832/admin/marker.php on line 333
+[21-Feb-2026 12:35:11 America/Chicago] PHP Warning:  include(/home1/kudkrzte/public_html/website_2456c832/admin/header.php): Failed to open stream: No such file or directory in /home1/kudkrzte/public_html/website_2456c832/admin/marker.php on line 333
+[21-Feb-2026 12:35:11 America/Chicago] PHP Warning:  include(): Failed opening '/home1/kudkrzte/public_html/website_2456c832/admin/header.php' for inclusion (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home1/kudkrzte/public_html/website_2456c832/admin/marker.php on line 333
+[21-Feb-2026 12:41:07 America/Chicago] PHP Warning:  include(/home1/kudkrzte/public_html/website_2456c832/admin/header.php): Failed to open stream: No such file or directory in /home1/kudkrzte/public_html/website_2456c832/admin/admin_add_marker.php on line 203
+[21-Feb-2026 12:41:07 America/Chicago] PHP Warning:  include(): Failed opening '/home1/kudkrzte/public_html/website_2456c832/admin/header.php' for inclusion (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home1/kudkrzte/public_html/website_2456c832/admin/admin_add_marker.php on line 203
+[21-Feb-2026 12:41:38 America/Chicago] PHP Warning:  include(/home1/kudkrzte/public_html/website_2456c832/admin/header.php): Failed to open stream: No such file or directory in /home1/kudkrzte/public_html/website_2456c832/admin/admin_add_marker.php on line 203
+[21-Feb-2026 12:41:38 America/Chicago] PHP Warning:  include(): Failed opening '/home1/kudkrzte/public_html/website_2456c832/admin/header.php' for inclusion (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home1/kudkrzte/public_html/website_2456c832/admin/admin_add_marker.php on line 203
+[21-Feb-2026 12:43:44 America/Chicago] PHP Warning:  require_once(/home1/kudkrzte/public_html/website_2456c832/admin/config.php): Failed to open stream: No such file or directory in /home1/kudkrzte/public_html/website_2456c832/admin/admin_add_marker.php on line 2
+[21-Feb-2026 12:43:44 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/kudkrzte/public_html/website_2456c832/admin/config.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home1/kudkrzte/public_html/website_2456c832/admin/admin_add_marker.php:2
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/admin_add_marker.php on line 2
+[21-Feb-2026 12:50:23 America/Chicago] PHP Warning:  require_once(/home1/kudkrzte/public_html/website_2456c832/admin../public/config.php): Failed to open stream: No such file or directory in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php on line 2
+[21-Feb-2026 12:50:23 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/kudkrzte/public_html/website_2456c832/admin../public/config.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php:2
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php on line 2
+[21-Feb-2026 12:50:44 America/Chicago] PHP Warning:  require_once(/home1/kudkrzte/public_html/website_2456c832/admin../publicconfig.php): Failed to open stream: No such file or directory in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php on line 2
+[21-Feb-2026 12:50:44 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/kudkrzte/public_html/website_2456c832/admin../publicconfig.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php:2
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php on line 2
+[21-Feb-2026 14:09:57 America/Chicago] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home1/kudkrzte/public_html/website_2456c832/public/config.php on line 2
+[21-Feb-2026 14:10:00 America/Chicago] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home1/kudkrzte/public_html/website_2456c832/public/config.php on line 2
+[21-Feb-2026 14:16:06 America/Chicago] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home1/kudkrzte/public_html/website_2456c832/public/config.php on line 2
+[21-Feb-2026 14:16:08 America/Chicago] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home1/kudkrzte/public_html/website_2456c832/public/config.php on line 2
+[21-Feb-2026 14:25:05 America/Chicago] PHP Warning:  Undefined variable $me in /home1/kudkrzte/public_html/website_2456c832/admin/markers.php on line 66
+[21-Feb-2026 14:25:05 America/Chicago] PHP Warning:  Trying to access array offset on value of type null in /home1/kudkrzte/public_html/website_2456c832/admin/markers.php on line 66
+[21-Feb-2026 14:25:05 America/Chicago] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home1/kudkrzte/public_html/website_2456c832/admin/markers.php on line 66
+[21-Feb-2026 14:29:55 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function htmlsecialchars() in /home1/kudkrzte/public_html/website_2456c832/admin/index.php:32
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/index.php on line 32
+[21-Feb-2026 14:31:25 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function htmlsecialchars() in /home1/kudkrzte/public_html/website_2456c832/admin/index.php:32
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/index.php on line 32
+[21-Feb-2026 14:32:10 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function htmlsecialchars() in /home1/kudkrzte/public_html/website_2456c832/admin/index.php:32
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/index.php on line 32
+[21-Feb-2026 14:32:45 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function htmlsecialchars() in /home1/kudkrzte/public_html/website_2456c832/admin/index.php:32
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/index.php on line 32
+[21-Feb-2026 14:33:45 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function htmlsecialchars() in /home1/kudkrzte/public_html/website_2456c832/admin/index.php:32
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/index.php on line 32
+[21-Feb-2026 14:34:06 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function htmlsecialchars() in /home1/kudkrzte/public_html/website_2456c832/admin/index.php:32
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/index.php on line 32
+[21-Feb-2026 14:35:22 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function htmlsecialchars() in /home1/kudkrzte/public_html/website_2456c832/admin/index.php:23
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/index.php on line 23
+[21-Feb-2026 14:36:15 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function htmlsecialchars() in /home1/kudkrzte/public_html/website_2456c832/admin/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/index.php on line 34
+[21-Feb-2026 14:37:09 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function htmlsecialchars() in /home1/kudkrzte/public_html/website_2456c832/admin/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/index.php on line 34
+[21-Feb-2026 14:44:16 America/Chicago] PHP Warning:  Undefined variable $me in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php on line 56
+[21-Feb-2026 14:44:16 America/Chicago] PHP Warning:  Trying to access array offset on value of type null in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php on line 56
+[21-Feb-2026 14:44:16 America/Chicago] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php on line 56
+[21-Feb-2026 14:46:55 America/Chicago] PHP Warning:  Undefined variable $me in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php on line 54
+[21-Feb-2026 14:46:55 America/Chicago] PHP Warning:  Trying to access array offset on value of type null in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php on line 54
+[21-Feb-2026 14:46:55 America/Chicago] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php on line 54
+[21-Feb-2026 15:06:46 America/Chicago] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home1/kudkrzte/public_html/website_2456c832/public/config.php on line 2
+[21-Feb-2026 20:53:47 America/Chicago] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home1/kudkrzte/public_html/website_2456c832/public/config.php on line 2
+[22-Feb-2026 04:36:13 America/Chicago] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home1/kudkrzte/public_html/website_2456c832/public/config.php on line 2
+[22-Feb-2026 06:04:13 America/Chicago] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home1/kudkrzte/public_html/website_2456c832/public/config.php on line 2
+[22-Feb-2026 08:25:40 America/Chicago] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home1/kudkrzte/public_html/website_2456c832/public/config.php on line 2
+[22-Feb-2026 09:59:11 America/Chicago] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home1/kudkrzte/public_html/website_2456c832/public/config.php on line 2
+[22-Feb-2026 09:59:18 America/Chicago] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home1/kudkrzte/public_html/website_2456c832/public/config.php on line 2
+[22-Feb-2026 09:59:20 America/Chicago] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home1/kudkrzte/public_html/website_2456c832/public/config.php on line 2
+[22-Feb-2026 11:20:52 America/Chicago] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home1/kudkrzte/public_html/website_2456c832/public/config.php on line 2
+[22-Feb-2026 11:20:53 America/Chicago] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home1/kudkrzte/public_html/website_2456c832/public/config.php on line 2
+[22-Feb-2026 11:58:26 America/Chicago] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/config.php on line 2
+[22-Feb-2026 11:58:26 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 9
+[22-Feb-2026 11:58:26 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 10
+[22-Feb-2026 11:58:26 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php:1) in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php on line 10
+[22-Feb-2026 11:58:34 America/Chicago] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/config.php on line 2
+[22-Feb-2026 11:58:34 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 9
+[22-Feb-2026 11:58:34 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 10
+[22-Feb-2026 11:58:34 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php:1) in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php on line 10
+[22-Feb-2026 11:58:50 America/Chicago] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/config.php on line 2
+[22-Feb-2026 11:58:50 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 9
+[22-Feb-2026 11:58:50 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 10
+[22-Feb-2026 11:58:50 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php:1) in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php on line 10
+[22-Feb-2026 12:00:27 America/Chicago] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/config.php on line 2
+[22-Feb-2026 12:00:27 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 9
+[22-Feb-2026 12:00:27 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 10
+[22-Feb-2026 12:00:27 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php:1) in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php on line 10
+[22-Feb-2026 12:00:44 America/Chicago] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/config.php on line 2
+[22-Feb-2026 12:00:44 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 9
+[22-Feb-2026 12:00:44 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 10
+[22-Feb-2026 12:00:44 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php:1) in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php on line 10
+[22-Feb-2026 12:00:49 America/Chicago] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/config.php on line 2
+[22-Feb-2026 12:00:49 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 9
+[22-Feb-2026 12:00:49 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 10
+[22-Feb-2026 12:00:49 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php:1) in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php on line 10
+[22-Feb-2026 12:01:01 America/Chicago] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/config.php on line 2
+[22-Feb-2026 12:01:01 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 9
+[22-Feb-2026 12:01:01 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 10
+[22-Feb-2026 12:01:01 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php:1) in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php on line 10
+[22-Feb-2026 12:01:43 America/Chicago] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/config.php on line 2
+[22-Feb-2026 12:01:43 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 9
+[22-Feb-2026 12:01:43 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 10
+[22-Feb-2026 12:01:43 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php:1) in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php on line 10
+[22-Feb-2026 12:01:52 America/Chicago] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/config.php on line 2
+[22-Feb-2026 12:01:52 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 9
+[22-Feb-2026 12:01:52 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 10
+[22-Feb-2026 12:01:52 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php:1) in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php on line 10
+[22-Feb-2026 12:02:56 America/Chicago] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php on line 1
+[22-Feb-2026 12:03:00 America/Chicago] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php on line 1
+[22-Feb-2026 12:04:01 America/Chicago] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/config.php on line 2
+[22-Feb-2026 12:04:01 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 9
+[22-Feb-2026 12:04:01 America/Chicago] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent in /home1/kudkrzte/public_html/website_2456c832/public/auth.php on line 10
+[22-Feb-2026 12:04:01 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php:1) in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php on line 10
+[22-Feb-2026 12:38:53 America/Chicago] PHP Warning:  Undefined variable $current in /home1/kudkrzte/public_html/website_2456c832/admin/index.php on line 24
+[22-Feb-2026 13:43:13 America/Chicago] PHP Warning:  require_once(/home1/kudkrzte/public_html/website_2456c832/admin/auth.php): Failed to open stream: No such file or directory in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php on line 2
+[22-Feb-2026 13:43:13 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/kudkrzte/public_html/website_2456c832/admin/auth.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php:2
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php on line 2
+[22-Feb-2026 13:43:44 America/Chicago] PHP Warning:  require_once(/home1/kudkrzte/public_html/website_2456c832/admin../auth.php): Failed to open stream: No such file or directory in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php on line 2
+[22-Feb-2026 13:43:44 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/kudkrzte/public_html/website_2456c832/admin../auth.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php:2
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php on line 2
+[22-Feb-2026 13:43:45 America/Chicago] PHP Warning:  require_once(/home1/kudkrzte/public_html/website_2456c832/admin../auth.php): Failed to open stream: No such file or directory in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php on line 2
+[22-Feb-2026 13:43:45 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/kudkrzte/public_html/website_2456c832/admin../auth.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php:2
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php on line 2
+[22-Feb-2026 13:44:48 America/Chicago] PHP Warning:  require_once(/home1/kudkrzte/public_html/website_2456c832/admin../public/auth.php): Failed to open stream: No such file or directory in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php on line 3
+[22-Feb-2026 13:44:48 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/kudkrzte/public_html/website_2456c832/admin../public/auth.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php:3
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php on line 3
+[22-Feb-2026 13:45:30 America/Chicago] PHP Warning:  require_once(/home1/kudkrzte/public_html/website_2456c832/admin/../puclic/db.php): Failed to open stream: No such file or directory in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php on line 5
+[22-Feb-2026 13:45:30 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/kudkrzte/public_html/website_2456c832/admin/../puclic/db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php:5
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/admin_edit_marker.php on line 5
+[22-Feb-2026 13:59:57 America/Chicago] PHP Warning:  require_once(/home1/kudkrzte/public_html/website_2456c832/admin/auth.php): Failed to open stream: No such file or directory in /home1/kudkrzte/public_html/website_2456c832/admin/delete_marker.php on line 2
+[22-Feb-2026 13:59:57 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/kudkrzte/public_html/website_2456c832/admin/auth.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home1/kudkrzte/public_html/website_2456c832/admin/delete_marker.php:2
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/delete_marker.php on line 2
+[22-Feb-2026 14:00:09 America/Chicago] PHP Warning:  require_once(/home1/kudkrzte/public_html/website_2456c832/admin/auth.php): Failed to open stream: No such file or directory in /home1/kudkrzte/public_html/website_2456c832/admin/delete_marker.php on line 2
+[22-Feb-2026 14:00:09 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/kudkrzte/public_html/website_2456c832/admin/auth.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home1/kudkrzte/public_html/website_2456c832/admin/delete_marker.php:2
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/delete_marker.php on line 2
+[22-Feb-2026 14:01:27 America/Chicago] PHP Warning:  require_once(/home1/kudkrzte/public_html/website_2456c832/admin/../auth.php): Failed to open stream: No such file or directory in /home1/kudkrzte/public_html/website_2456c832/admin/delete_marker.php on line 2
+[22-Feb-2026 14:01:27 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/kudkrzte/public_html/website_2456c832/admin/../auth.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home1/kudkrzte/public_html/website_2456c832/admin/delete_marker.php:2
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/delete_marker.php on line 2
+[22-Feb-2026 14:02:42 America/Chicago] PHP Warning:  require_once(/home1/kudkrzte/public_html/website_2456c832/admin/../puclic/db.php): Failed to open stream: No such file or directory in /home1/kudkrzte/public_html/website_2456c832/admin/delete_marker.php on line 4
+[22-Feb-2026 14:02:42 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/kudkrzte/public_html/website_2456c832/admin/../puclic/db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home1/kudkrzte/public_html/website_2456c832/admin/delete_marker.php:4
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/delete_marker.php on line 4
+[22-Feb-2026 14:02:47 America/Chicago] PHP Warning:  require_once(/home1/kudkrzte/public_html/website_2456c832/admin/../puclic/db.php): Failed to open stream: No such file or directory in /home1/kudkrzte/public_html/website_2456c832/admin/delete_marker.php on line 4
+[22-Feb-2026 14:02:47 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/kudkrzte/public_html/website_2456c832/admin/../puclic/db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home1/kudkrzte/public_html/website_2456c832/admin/delete_marker.php:4
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/delete_marker.php on line 4
+[22-Feb-2026 14:03:03 America/Chicago] PHP Warning:  require_once(/home1/kudkrzte/public_html/website_2456c832/admin/../puclic/db.php): Failed to open stream: No such file or directory in /home1/kudkrzte/public_html/website_2456c832/admin/delete_marker.php on line 4
+[22-Feb-2026 14:03:03 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/kudkrzte/public_html/website_2456c832/admin/../puclic/db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home1/kudkrzte/public_html/website_2456c832/admin/delete_marker.php:4
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/delete_marker.php on line 4
+[22-Feb-2026 14:04:46 America/Chicago] PHP Warning:  require_once(/home1/kudkrzte/public_html/website_2456c832/admin/../puclic/db.php): Failed to open stream: No such file or directory in /home1/kudkrzte/public_html/website_2456c832/admin/delete_marker.php on line 4
+[22-Feb-2026 14:04:46 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/kudkrzte/public_html/website_2456c832/admin/../puclic/db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home1/kudkrzte/public_html/website_2456c832/admin/delete_marker.php:4
+Stack trace:
+#0 {main}
+  thrown in /home1/kudkrzte/public_html/website_2456c832/admin/delete_marker.php on line 4
+[22-Feb-2026 15:56:27 America/Chicago] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home1/kudkrzte/public_html/website_2456c832/public/config.php on line 2
+[22-Feb-2026 16:32:43 America/Chicago] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home1/kudkrzte/public_html/website_2456c832/public/config.php on line 2
+[22-Feb-2026 16:37:09 America/Chicago] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home1/kudkrzte/public_html/website_2456c832/public/config.php on line 2
