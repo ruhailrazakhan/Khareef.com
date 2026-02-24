@@ -322,6 +322,164 @@ function e($s){ return htmlspecialchars((string)$s, ENT_QUOTES, 'UTF-8'); }
       .relCard{width:min(78vw, 320px)}
     }
   </style>
+  
+  <style>
+      /* ===== Hotel carousel card listing (Dorchester-like) ===== */
+.carousel-card-listing{
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  border: 1px solid #e6ebf0;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(16,24,40,.06);
+}
+
+.hotel-carousel-card-listing{
+  padding: 12px;
+}
+
+.more-than-4-card .hotel-carousel-track{
+  gap: 10px;
+}
+
+.hotel-carousel-header{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:12px;
+  padding: 0 4px 10px 4px;
+}
+
+.hotel-carousel-title{
+  margin:0;
+  font-size:18px;
+  font-weight:1100;
+  letter-spacing:-.2px;
+}
+
+.hotel-carousel-sub{
+  font-size:12px;
+  color:#5b6573;
+  margin-top:6px;
+}
+
+.hotel-carousel-actions{
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
+
+.hotel-carousel-btn{
+  width:40px;height:40px;
+  border-radius:999px;
+  border:1px solid #e6ebf0;
+  background:#fff;
+  cursor:pointer;
+  font-weight:1100;
+  box-shadow: 0 2px 10px rgba(16,24,40,.06);
+}
+.hotel-carousel-btn:disabled{
+  opacity:.45;
+  cursor:not-allowed;
+}
+
+.hotel-carousel-viewport{
+  overflow:auto;
+  scroll-snap-type:x mandatory;
+  -webkit-overflow-scrolling:touch;
+  padding: 4px;
+}
+.hotel-carousel-viewport::-webkit-scrollbar{height:10px}
+.hotel-carousel-viewport::-webkit-scrollbar-thumb{background:#d9e2ee;border-radius:999px}
+.hotel-carousel-viewport::-webkit-scrollbar-track{background:transparent}
+
+.hotel-carousel-track{
+  display:flex;
+  align-items:stretch;
+  gap: 8px;
+}
+
+.hotel-carousel-card{
+  flex: 0 0 260px;
+  scroll-snap-align:start;
+  border-radius:16px;
+  overflow:hidden;
+  border:1px solid #e6ebf0;
+  background:#fff;
+  transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+}
+.hotel-carousel-card:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 16px 34px rgba(16,24,40,.10);
+  border-color: rgba(0,87,217,.22);
+}
+
+.hotel-carousel-media{
+  position:relative;
+  width:100%;
+  height:170px;
+  background:#e9eef5;
+}
+.hotel-carousel-media img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+.hotel-carousel-badge{
+  position:absolute;
+  left:10px;
+  top:10px;
+  background: rgba(255,255,255,.92);
+  border:1px solid rgba(0,0,0,.06);
+  padding:6px 10px;
+  border-radius:999px;
+  font-size:12px;
+  font-weight:1100;
+  text-transform:capitalize;
+}
+
+.hotel-carousel-body{
+  padding:12px;
+}
+.hotel-carousel-name{
+  margin:0;
+  font-size:14px;
+  font-weight:1100;
+  color:#0057d9;
+  line-height:1.25;
+}
+.hotel-carousel-desc{
+  margin:8px 0 0;
+  font-size:13px;
+  line-height:1.35;
+  color:#3b4554;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+
+.hotel-carousel-dots{
+  display:flex;
+  gap:6px;
+  justify-content:center;
+  padding:10px 0 2px;
+}
+.hotel-carousel-dot{
+  width:8px;height:8px;border-radius:999px;
+  background:#d9e2ee;
+}
+.hotel-carousel-dot.active{
+  width:18px;
+  background: rgba(0,87,217,.75);
+}
+
+/* Mobile tweaks */
+@media(max-width:980px){
+  .hotel-carousel-card{flex-basis: 78vw;}
+}
+  </style>
 </head>
 
 <body>
@@ -338,7 +496,12 @@ function e($s){ return htmlspecialchars((string)$s, ENT_QUOTES, 'UTF-8'); }
   <?php else: ?>
     <div class="heroMedia"></div>
   <?php endif; ?>
-
+<section class="heroWhite" id="heroWhite">
+  <video id="heroVideo" autoplay muted loop playsinline style="display:none"></video>
+  <img id="heroImg" alt="" style="display:none; width:100%; height:100%; object-fit:cover;">
+  <div class="heroOverlay"></div>
+  <!-- your hero text content here -->
+</section>
   <div class="heroInner">
     <div class="heroCard">
       <div class="typeChip">● <?= e($type) ?></div>
@@ -379,7 +542,27 @@ function e($s){ return htmlspecialchars((string)$s, ENT_QUOTES, 'UTF-8'); }
     <h2>Gallery</h2>
     <p>Slider style: <b><?= e($sliderStyle) ?></b> (change later dynamically)</p>
   </div>
+<section class="carousel-card-listing more-than-4-card hotel-carousel-card-listing" id="photoCarousel">
+  <div class="hotel-carousel-header">
+    <div>
+      <h2 class="hotel-carousel-title">Photos</h2>
+      <div class="hotel-carousel-sub" id="photoCarouselSub">Loading…</div>
+    </div>
 
+    <div class="hotel-carousel-actions">
+      <button class="hotel-carousel-btn" type="button" id="pcPrev">‹</button>
+      <button class="hotel-carousel-btn" type="button" id="pcNext">›</button>
+    </div>
+  </div>
+
+  <div class="hotel-carousel-viewport" id="pcViewport">
+    <div class="hotel-carousel-track" id="pcTrack">
+      <!-- JS will render slides -->
+    </div>
+  </div>
+
+  <div class="hotel-carousel-dots" id="pcDots"></div>
+</section>
   <section class="slider <?= e($sliderStyle) ?>" data-style="<?= e($sliderStyle) ?>">
     <div class="sliderTrack" id="galleryTrack">
       <?php if (!$images): ?>
@@ -454,6 +637,197 @@ function e($s){ return htmlspecialchars((string)$s, ENT_QUOTES, 'UTF-8'); }
     slider.classList.remove('cards','strip');
     slider.classList.add(style);
   })();
+  
+</script>
+<script>
+  // ===== Build "Photos" carousel (custom first, then google) =====
+function buildPhotosCarousel(photos, sourceLabel){
+  const track = document.getElementById('pcTrack');
+  const viewport = document.getElementById('pcViewport');
+  const sub = document.getElementById('photoCarouselSub');
+  const dots = document.getElementById('pcDots');
+  const prev = document.getElementById('pcPrev');
+  const next = document.getElementById('pcNext');
+
+  track.innerHTML = '';
+  dots.innerHTML = '';
+
+  if(!photos || !photos.length){
+    sub.textContent = "No photos available yet.";
+    prev.disabled = true;
+    next.disabled = true;
+    return;
+  }
+
+  sub.textContent = `${photos.length} photos · ${sourceLabel}`;
+
+  // Render cards
+  photos.forEach((url, i)=>{
+    const card = document.createElement('div');
+    card.className = 'hotel-carousel-card';
+    card.innerHTML = `
+      <div class="hotel-carousel-media">
+        <img src="${url}" alt="">
+        <div class="hotel-carousel-badge">Photo ${i+1}</div>
+      </div>
+      <div class="hotel-carousel-body">
+        <p class="hotel-carousel-name">${MARKER.title || ''}</p>
+        <p class="hotel-carousel-desc">${MARKER.short_text || ''}</p>
+      </div>
+    `;
+    // optional: click opens lightbox if you have it
+    card.addEventListener('click', ()=> {
+      if (typeof openLightbox === 'function') openLightbox(i);
+    });
+    track.appendChild(card);
+
+    const dot = document.createElement('span');
+    dot.className = 'hotel-carousel-dot' + (i===0 ? ' active' : '');
+    dot.addEventListener('click', ()=> scrollToIndex(i));
+    dots.appendChild(dot);
+  });
+
+  function scrollToIndex(i){
+    const card = track.children[i];
+    if(!card) return;
+    card.scrollIntoView({behavior:'smooth', inline:'start', block:'nearest'});
+  }
+
+  function updateDots(){
+    // determine which slide is most visible
+    const cards = [...track.children];
+    const vpRect = viewport.getBoundingClientRect();
+    let bestI = 0;
+    let bestScore = -Infinity;
+
+    cards.forEach((c, i)=>{
+      const r = c.getBoundingClientRect();
+      const visible = Math.min(r.right, vpRect.right) - Math.max(r.left, vpRect.left);
+      const score = visible; // bigger is better
+      if(score > bestScore){
+        bestScore = score;
+        bestI = i;
+      }
+    });
+
+    [...dots.children].forEach((d, i)=> d.classList.toggle('active', i === bestI));
+
+    // enable/disable buttons
+    prev.disabled = (bestI === 0);
+    next.disabled = (bestI === cards.length - 1);
+  }
+
+  prev.addEventListener('click', ()=> {
+    const active = [...dots.children].findIndex(d => d.classList.contains('active'));
+    scrollToIndex(Math.max(0, active - 1));
+  });
+
+  next.addEventListener('click', ()=> {
+    const active = [...dots.children].findIndex(d => d.classList.contains('active'));
+    scrollToIndex(Math.min(track.children.length - 1, active + 1));
+  });
+
+  viewport.addEventListener('scroll', () => {
+    window.requestAnimationFrame(updateDots);
+  }, {passive:true});
+
+  // initial state
+  updateDots();
+}
+
+async function setHeroMedia(){
+  const v = document.getElementById('heroVideo');
+  const img = document.getElementById('heroImg');
+
+  // 1) Decide hero image first: custom[0] else google[0]
+  const { custom, google, all, usedGoogle } = await getAllPhotosForMarker();
+  const heroPhoto = all[0] || '';
+
+  // 2) If you have hero_video_url in DB, use it. Otherwise skip video.
+  const videoUrl = (MARKER.hero_video_url || '').trim();
+
+  function showImg(){
+    v.style.display = 'none';
+    if(heroPhoto){
+      img.src = heroPhoto;
+      img.style.display = 'block';
+    } else {
+      img.style.display = 'none';
+    }
+  }
+
+  if(!videoUrl){
+    showImg();
+    return;
+  }
+
+  // 3) Try load video, if fails show image
+  v.src = videoUrl;
+  v.style.display = 'block';
+  img.style.display = 'none';
+
+  const fail = () => showImg();
+
+  // if video cannot play -> fallback
+  v.addEventListener('error', fail, {once:true});
+  v.addEventListener('stalled', fail, {once:true});
+  v.addEventListener('abort', fail, {once:true});
+
+  // Some browsers block autoplay; if play() rejects -> fallback
+  try {
+    await v.play();
+  } catch (e) {
+    fail();
+  }
+}
+
+
+
+async function setHeroMedia(){
+  const v = document.getElementById('heroVideo');
+  const img = document.getElementById('heroImg');
+
+  // 1) Decide hero image first: custom[0] else google[0]
+  const { custom, google, all, usedGoogle } = await getAllPhotosForMarker();
+  const heroPhoto = all[0] || '';
+
+  // 2) If you have hero_video_url in DB, use it. Otherwise skip video.
+  const videoUrl = (MARKER.hero_video_url || '').trim();
+
+  function showImg(){
+    v.style.display = 'none';
+    if(heroPhoto){
+      img.src = heroPhoto;
+      img.style.display = 'block';
+    } else {
+      img.style.display = 'none';
+    }
+  }
+
+  if(!videoUrl){
+    showImg();
+    return;
+  }
+
+  // 3) Try load video, if fails show image
+  v.src = videoUrl;
+  v.style.display = 'block';
+  img.style.display = 'none';
+
+  const fail = () => showImg();
+
+  // if video cannot play -> fallback
+  v.addEventListener('error', fail, {once:true});
+  v.addEventListener('stalled', fail, {once:true});
+  v.addEventListener('abort', fail, {once:true});
+
+  // Some browsers block autoplay; if play() rejects -> fallback
+  try {
+    await v.play();
+  } catch (e) {
+    fail();
+  }
+}
 </script>
 <script src="header.js"></script>
 </body>
